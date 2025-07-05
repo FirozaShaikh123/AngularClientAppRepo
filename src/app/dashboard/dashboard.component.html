@@ -1,0 +1,18 @@
+<h1>dashboard works!</h1>
+<form>
+    <button  (click)="MyDashboardBtn()">Click Me to redirect order page </button>
+    <button  (click)="MyDashboarBtn2()"> click me I am two</button>
+    <button  *ngIf="isVisible" (click) ="MyButton3()">I am third</button>
+
+    <button *ngIf="isVisible" (click)="MyButton3()">I am third</button>
+    <button  (click)="MyRedirect()"> Redirect me</button>
+<ul>
+    <li *ngFor="let user of users">
+        
+        <strong>{{user.name}}</strong>
+        <strong>{{user.email}}</strong>
+
+    </li>
+</ul>
+</form>
+
